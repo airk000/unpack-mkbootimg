@@ -1,8 +1,3 @@
-Andrew Huang <bluedrum@163.com> http://bluedrum.sinaapp.com
-0.about my project
----------------------------------------------------------------
-   unpack-mkbootimg from the CM 7.0 (http://www.cyanogenmod.com/), I extract it  and libmincrpty from /system/core/mkbootimg, and rewrite the Makefile, as a simplified open source project.
-
 Developers run make under linux (need to install gcc, make) or windows(neet to install minGW), after the success of the executable file mkbootimg / unpackbootimg.
 
 
@@ -33,5 +28,5 @@ Developers run make under linux (need to install gcc, make) or windows(neet to i
 -o|--output
 
  2.2 exapmle
-   ./mkbootimg --cmdline 'no_console_suspend=1 console=null' --kernel zImage --ramdisk boot/boot.img-ramdisk.gz -o boot.img --base 02e00000
+   ./mkbootimg --cmdline 'no_console_suspend=1 console=null' --kernel zImage --ramdisk boot/boot.img-ramdisk.gz -o boot.img --base 02e00000 --ramdiskaddr 0x81508000
 
